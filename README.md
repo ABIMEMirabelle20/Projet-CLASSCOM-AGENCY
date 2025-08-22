@@ -1,7 +1,7 @@
  Site vitrine - CLASSCOM agency
 
 **Description
-Ce projet est un site web vitrine développé pour présenter les services, les réalisations et les coordonnées de l’agence de communication XYZ.  
+Ce projet est un site web vitrine développé pour présenter les services, les réalisations et les coordonnées de CLASSCOM agency.  
 L’objectif est de fournir une interface moderne, responsive et simple à naviguer pour les visiteurs.
  
  **Fonctionnalités
