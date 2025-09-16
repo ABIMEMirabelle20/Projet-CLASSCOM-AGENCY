@@ -1,3 +1,5 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
+
 * {
     margin: 0;
     padding: 0;
@@ -15,6 +17,10 @@ header {
     background-color: #000000;
     color: #ffffff;
     display: flex;
+
+    /* postion sticky pour que le header reste suspendu et visible à n'importe quel niveau de la page  */
+    position: sticky;
+    top: 0;
     justify-content: space-between;
     align-items: center;
     padding: 15px 40px;
@@ -63,6 +69,18 @@ nav ul li a:hover {
     color: #ff9900;
 }
 
+/* button active/desactive menu */
+header .btn-menu{
+    display: none;
+
+}
+
+/* mobile nav  */
+.mobile-nav{
+    display: none;
+}
+/* -------------------- fin header ------------------------------- */
+/* ------------------------------------------------------------------- */
 .hero {
     background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
                 url('https://images.unsplash.com/photo-1556761175-129418cb2dfe') center/cover no-repeat;
@@ -119,15 +137,27 @@ nav ul li a:hover {
 .card {
     background-color: #fff3e6; /* Orange très clair */
     border: 2px solid #ff9900;
+
+    /* centrer le texte avec flexbox */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* -------------------------------------- */
     padding: 25px;
     border-radius: 15px;
     transition: transform 0.3s, box-shadow 0.3s;
     color: #000000;
 }
+@media (max-width: 480px) {
+    .card {
+        padding-block: 15px;
+    }
+}
 
 .card h3 {
     color: #ff9900;
-    margin-bottom: 10px;
+    /* plus besoin d'un margin-bottom parce qu'il est déjà centré avec flexbox */
+    /* margin-bottom: 10px; */
 }
 
 .card p {
@@ -180,5 +210,67 @@ footer {
 
     nav ul li {
         margin: 10px 0;
+    }
+}
+
+/*  mobile responsive */
+@media(max-width: 480px){
+    header{
+        padding-inline: 15px;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        align-items: center;
+    }
+    header h1{
+        font-size: 1rem;
+    }
+    /* desactivation de menu principale */
+    .medium-nav{
+        display: none;
+    }
+
+    /* button active menu */
+    header .btn-menu{
+        width: 40px;
+        height: 40px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        cursor: pointer;
+        font-size: 2rem;
+        border: 1px solid gray;
+        border-radius: 10px;
+        transition: all .3s ease;
+    }
+    header .btn-menu.active{
+        background: #8080805e;
+    }
+
+    /* activactive du menu mobile */
+    .mobile-nav{
+        display: none;
+        position: absolute;
+
+        /* height: 0px; */
+        top: 90px;
+        right: 15px;
+        background: #000;
+        transition: all .3s ease-in-out;
+    }
+    .mobile-nav.active{
+        display: flex;
+    }
+    .mobile-nav ul{
+        flex-direction: column;
+    }
+    .mobile-nav ul li{
+        width: 200px;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        padding-inline: 15px;
+        font-size: 1.2rem;
     }
 }
