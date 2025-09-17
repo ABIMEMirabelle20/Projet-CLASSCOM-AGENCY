@@ -1,4 +1,4 @@
-const body = document.body
+// const body = document.body
 
 const btnMenu = document.querySelector(".btn-menu")
 const MobileNav = document.querySelector(".mobile-nav")
