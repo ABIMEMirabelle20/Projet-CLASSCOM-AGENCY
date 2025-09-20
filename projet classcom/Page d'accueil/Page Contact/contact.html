@@ -1,77 +1,109 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact - Notre Agence</title>
-  <link rel="stylesheet" href="contact.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact - Notre Agence</title>
+    <link rel="stylesheet" href="contact.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <a
+        href="/Projet-CLASSCOM-AGENCY/projet classcom/Page d'accueil/index.html"
+      >
+        <i class="bi bi-arrow-left"> retour</i>
+      </a>
+      <h1>Contactez-nous</h1>
+      <p>
+        Nous serons ravis d’échanger avec vous et de vous accompagner dans vos
+        projets.
+      </p>
+    </header>
 
-  
-  <header>
-    <h1>Contactez-nous</h1>
-    <p>Nous serons ravis d’échanger avec vous et de vous accompagner dans vos projets.</p>
-  </header>
+    <section class="formulaire">
+        <h2>Demander un Devis</h2>
+        <form action="#" method="post">
+            <label for="nom">Nom et Prénom</label>
+            <input
+                type="text"
+                 id="nom"
+                name="nom"
+                placeholder="Votre nom complet"
+                required
+            />
 
+            <label for="email">Adresse Email</label>
+            <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Votre email"
+                required
+            />
 
-  
-  <section class="formulaire">
-    <h2>Demander un Devis</h2>
-    <form action="#" method="post">
-      <label for="nom">Nom et Prénom</label>
-      <input type="text" id="nom" name="nom" placeholder="Votre nom complet" required>
+            <label for="telephone">Téléphone</label>
+            <input
+                type="tel"
+                id="telephone"
+                name="telephone"
+                placeholder="Votre numéro de téléphone"
+            />
 
-      <label for="email">Adresse Email</label>
-      <input type="email" id="email" name="email" placeholder="Votre email" required>
+            <label for="service">Service souhaité</label>
+            <select id="service" name="service" required>
+                <option value="">-- Sélectionnez un service --</option>
+                <option value="communication">Campagne publicitaire</option>
+                <option value="identite">Impression signalétique</option>
+                <option value="site">Branding et Storytelling</option>
+                <option value="reseaux">Graphisme ET Identité Visuelle</option>
+                <option value="reseaux">Architecture et Aménagement d'Espace</option>
+                <option value="reseaux">Suivi et Orientation</option>
+                <option value="reseaux">Services de communication Globale</option>
+                <option value="reseaux"> Développement Web et solutions digitales</option>
+            </select>
 
-      <label for="telephone">Téléphone</label>
-      <input type="tel" id="telephone" name="telephone" placeholder="Votre numéro de téléphone">
+            <label for="message">Détails de votre projet</label>
+            <textarea
+                id="message"
+                name="message"
+                rows="5"
+                placeholder="Expliquez votre besoin..."
+                maxlength="580"
+                required
+            ></textarea>
 
-      <label for="service">Service souhaité</label>
-      <select id="service" name="service" required>
-        <option value="">-- Sélectionnez un service --</option>
-        <option value="communication">Campagne publicitaire</option>
-        <option value="identite">Impression signalétique</option>
-        <option value="site">Branding et Storytelling</option>
-        <option value="reseaux">Graphisme ET Identité Visuelle</option>
-         <option value="reseaux">Architecture et Aménagement d'Espace</option>
-         <option value="reseaux">Suivi et Orientation</option>
-         <option value="reseaux">Services de communication Globale</option>
-         <option value="reseaux">Développement Web et solutions digitales</option>
-        
+            <button type="submit">Envoyer ma demande</button>
+        </form>
+    </section>
 
-      </select>
+    <footer>
+      <p>Suivez-nous sur nos réseaux :</p>
+      <div class="icons">
+        <div class="social-icons">
+          <a
+            href="https://www.facebook.com/profile.php?id=61578841178207"
+            target="_blank"
+          >
+            <i class="fab fa-facebook-f"></i>
+          </a>
 
-      <label for="message">Détails de votre projet</label>
-      <textarea id="message" name="message" rows="5" placeholder="Expliquez votre besoin..." required></textarea>
+          <a
+            href="https://www.instagram.com/classcom.agency?igsh=MXFtZjZiZzZnb3VvdQ=="
+            target="_blank"
+          >
+            <i class="fab fa-instagram"></i>
+          </a>
 
-      <button type="submit">Envoyer ma demande</button>
-    </form>
-  </section>
-
-  <footer>
-    <p>Suivez-nous sur nos réseaux :</p>
-    <div class="icons">
-     <div class="social-icons">
-    
-    <a href="https://www.facebook.com/profile.php?id=61578841178207" target="_blank">
-        <i class="fab fa-facebook-f"></i>
-    </a>
-
-     <a href="https://www.instagram.com/classcom.agency?igsh=MXFtZjZiZzZnb3VvdQ==" target="_blank">
-        <i class="fab fa-instagram"></i>
-    </a>
-
-    <a href="https://wa.me/+22896895587" target="_blank">
-        <i class="fab fa-whatsapp"></i>
-    </a>
-</div>
-
-    </div>
-     <p>&copy; 2025 CLASSCOM agency. Tous droits réservés.</p>
-</footer>
-
-</body>
+          <a href="https://wa.me/+22896895587" target="_blank">
+            <i class="fab fa-whatsapp"></i>
+          </a>
+        </div>
+      </div>
+      <p>&copy; 2025 CLASSCOM agency. Tous droits réservés.</p>
+    </footer>
+  </body>
 </html>

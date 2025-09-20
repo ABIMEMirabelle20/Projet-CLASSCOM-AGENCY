@@ -9,6 +9,17 @@ header {
     background-color: #000;
     padding: 20px;
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+header a{
+    position: absolute;
+    left: 15px;
+    color: #ddd;
+    text-decoration: none;
+    font-size: 1.2rem;
 }
 
 header h1 {
