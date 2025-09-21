@@ -10,6 +10,18 @@ header {
   background: #000;
   padding: 15px 40px;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+header a{
+    position: absolute;
+    left: 15px;
+    color: #ddd;
+    text-decoration: none;
+    font-size: 1.2rem;
 }
 header h1 {
   color: #ff9900;
@@ -66,6 +78,20 @@ form input, form select, form textarea {
   border: 1px solid #ddd;
   border-radius: 8px;
   font-size: 1em;
+}
+form textarea{
+  resize:vertical;
+  height: 50px;
+  max-height: 200px;
+
+  text-align: justify;
+  word-spacing: 1px;
+ line-height: 25px;
+}
+form textarea::first-letter{
+  /* margin-left: 15px; */
+  text-transform: uppercase;
+  font-size: 1.2rem;
 }
 form input:focus, form select:focus, form textarea:focus {
   border-color: #ff9900;

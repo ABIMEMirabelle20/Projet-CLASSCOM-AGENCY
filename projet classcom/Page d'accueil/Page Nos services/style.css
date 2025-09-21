@@ -26,6 +26,17 @@ header {
     color: var(--white);
     padding: 1rem 0;
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+header a{
+    position: absolute;
+    left: 15px;
+    color: #ddd;
+    text-decoration: none;
+    font-size: 1.2rem;
 }
 
 .logo span {
