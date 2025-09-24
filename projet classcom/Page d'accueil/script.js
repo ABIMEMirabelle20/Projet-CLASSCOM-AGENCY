@@ -8,48 +8,6 @@ btnMenu.addEventListener('click', ()=>{
     MobileNav.classList.toggle('active')
 })
 
-aboutTitle.style.opacity = 0
-// window.addEventListener('scroll', ()=>{
-    
-//     if(window.innerHeight + window.screenY >= document.body.offsetHeight){
-//         console.log("SCROLL BODY");
-//     }else{
-//         aboutTitle.style.opacity = 1
-//         console.log("BODY SCROLL");
-        
-//     }
-
-
-//     // if(window.scrollY > 650){
-//     //     aboutTitle.style.opacity = 1
-//     //     console.log("SCROLL");
-    
-//     // }
-
-// })
-window.addEventListener('scroll', ()=>{
-    if(aboutTitle.scrollIntoView){
-        aboutTitle.style.opacity = 1
-        aboutTitle.style.transition = "all " + .5+ "s "+ .3 + "s" +" ease-in"
-    }else if(!aboutTitle.scrollIntoView){
-        aboutTitle.style.opacity = 0
-    }
-})
-
-// noivelle fonctionnalité : section-cards
-const cards = document.querySelectorAll(".service-cards > .card")
-
-function cardActive(){
-    cards.forEach((items) =>{
-    items.classList.remove("active")
-    this.classList.add("active")
-    })
-}
-
-cards.forEach((items) =>{
-    items.addEventListener('click', cardActive)
-})
-
 //Bouton retour
 function goBack() {
     if(history.length > 1){
