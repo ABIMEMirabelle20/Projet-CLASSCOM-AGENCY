@@ -17,11 +17,16 @@ header {
   position: relative;
 }
 header a{
-    position: absolute;
-    left: 15px;
-    color: #ddd;
-    text-decoration: none;
-    font-size: 1.2rem;
+  position: absolute;
+  left: 15px;
+  color: #ddd;
+  text-decoration: none;
+  font-size: 2rem;
+  color: #ff9900;
+  transition: all .2s ease;
+}
+header a:hover{
+  color: #ff990091;
 }
 header h1 {
   color: #ff9900;

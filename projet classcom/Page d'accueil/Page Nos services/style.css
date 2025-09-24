@@ -36,7 +36,12 @@ header a{
     left: 15px;
     color: #ddd;
     text-decoration: none;
-    font-size: 1.2rem;
+    font-size: 2rem;
+    color: #ff9900;
+    transition: all .2s ease;
+}
+header a:hover{
+    color: #ff990091;
 }
 
 .logo span {
