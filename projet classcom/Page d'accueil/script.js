@@ -49,3 +49,12 @@ function cardActive(){
 cards.forEach((items) =>{
     items.addEventListener('click', cardActive)
 })
+
+//Bouton retour
+function goBack() {
+    if(history.length > 1){
+        history.back(); // revient a la page précédente
+    } else{
+        window.location.href ="index.html"; // si il n'y a pas d'historique l'utilisateur est redirigéré vers l'accueil
+    }
+}

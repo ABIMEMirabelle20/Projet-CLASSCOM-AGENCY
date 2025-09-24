@@ -25,9 +25,7 @@ header {
     background-color: #000000;
     color: #ffffff;
     display: flex;
-
-    /* postion sticky pour que le header reste suspendu et visible à n'importe quel niveau de la page  */
-    position: sticky;
+     position: sticky;
     top: 0;
     z-index: 99999;
 
@@ -79,18 +77,17 @@ nav ul li a:hover {
     color: #ff9900;
 }
 
-/* button active/desactive menu */
+
 header .btn-menu{
     display: none;
 
 }
 
-/* mobile nav  */
+
 .mobile-nav{
     display: none;
 }
-/* -------------------- fin header ------------------------------- */
-/* ------------------------------------------------------------------- */
+
 .hero {
     background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
                 url('https://images.unsplash.com/photo-1556761175-129418cb2dfe') center/cover no-repeat;
@@ -208,6 +205,8 @@ header .btn-menu{
 /* nouvelle fonctionnalié : changement de la presentation des services. avec des cards plus petits et qui fait appel à des sections de la presentation des services */
 .services {
     padding: 60px 0px;
+.services{
+    padding: 60px 20px;
     text-align: center;
 
     width: 100%;
@@ -218,6 +217,14 @@ header .btn-menu{
     align-items: center;
     background: #ffffff;
 }
+}
+
+
+@media(max-width: 480px){
+    .services{
+        padding-inline: 5px;
+    }
+}
 
 .services h2 {
     font-size: 2rem;
@@ -225,24 +232,13 @@ header .btn-menu{
     color: #ff9900;
 }
 
-/* ------------ mise en éviedence de l'aanncienne focntionnalité ----------------- */
-/* .service-cards {
+ .service-cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
-} */
+} 
 
- /* ----- nouvelle fonctionnalité ----------------- */
-/* .services > div{
-    width: 100%;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    position: sticky;
-    top: 0;
-} */
+ 
 .service-cards{
     width: 100%;
     /* min-height: 100px; */
@@ -261,6 +257,8 @@ header .btn-menu{
 
     gap: 15px;
     /* border: 2px solid red; */
+     min-height: 100px; 
+    border: 2px ; 
 }
 @media(max-width: 480px){
     .service-cards{
@@ -268,17 +266,17 @@ header .btn-menu{
         justify-content: space-between;
         padding-inline: 5px;
         /* border: 1px solid; */
+         border: 1px solid; 
     }
 }
 
-/*------------  mise en évidence de l'ancienne fonctionnalité ---------------- */
-/* .card {
+
+ .card {
     background-color: #fff3e6; 
     border: 2px solid #ff9900;
-
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items:normal;
     padding: 25px;
     border-radius: 15px;
     transition: transform 0.3s, box-shadow 0.3s;
@@ -288,20 +286,9 @@ header .btn-menu{
     .card {
         padding-block: 15px;
     }
-} */
+} 
 
-/* --------- nouvelle fonctionnalié --------------- */
-.card{
-    /* width: 150px; */
-    display: flex;
-    font-size: .7rem;
-    padding-inline: 10px;
-    padding-block: 5px;
 
-    border: 2px solid #ff9900bb;
-    border-radius: 15px;
-    text-decoration: none;
-}
 .card.active{
     border: 2px solid #ff9900;
     background: #ff990039;
@@ -314,17 +301,16 @@ header .btn-menu{
 }
 .card h3 {
     color: #ff9900;
+    margin-bottom: 10px;
 }
-/* .card.active h3{
-    color: #ff9900;
-} */
+
 
 .card p {
     font-size: 0.95rem;
 }
 
-/*------------  mise en évidence de l'ancienne fonctionnalité ---------------- */
-/* .card:hover {
+
+.card:hover {
     transform: translateY(-8px);
     box-shadow: 0px 8px 20px rgba(255, 102, 0, 0.4);
     background-color: #ff9900;
@@ -332,33 +318,9 @@ header .btn-menu{
 }
 .card:hover h3 {
     color: #ffffff;
-} */
+} 
 
-.services aside{
-    width: 100%;
-    min-height: 70vh;
 
-    display: flex;
-    /* justify-content: center; */
-    /* align-items: ; */
-    /* flex-direction: column; */
-    /* position: sticky;
-    top: 70px; */
-    scroll-snap-type: x mandatory;
-    overflow: hidden;
-    /* border: 2px solid gray; */
-    margin-top: 35px;
-}
-
-.services aside .serviceContent{
-    width: 100%;
-    height: 600px;
-    /* border: 2px solid cyan; */
-    padding-top: 100px;
-
-    display: flex;
-    flex-shrink: 0;
-}
 @media(max-width: 480px){
     .services aside .serviceContent{
         padding-top: 170px;
@@ -373,6 +335,7 @@ header .btn-menu{
                 url('https://images.unsplash.com/photo-1556761175-129418cb2dfe') center/cover no-repeat;
 }
 /*  ==================== section ======================= */
+
 footer {
     background-color: #000000;
     color: #ffffff;
