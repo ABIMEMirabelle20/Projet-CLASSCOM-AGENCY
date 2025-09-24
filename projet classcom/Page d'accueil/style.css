@@ -205,6 +205,7 @@ header .btn-menu{
 /* nouvelle fonctionnalié : changement de la presentation des services. avec des cards plus petits et qui fait appel à des sections de la presentation des services */
 .services {
     padding: 60px 0px;
+}
 .services{
     padding: 60px 20px;
     text-align: center;
@@ -217,8 +218,6 @@ header .btn-menu{
     align-items: center;
     background: #ffffff;
 }
-}
-
 
 @media(max-width: 480px){
     .services{
@@ -250,7 +249,7 @@ header .btn-menu{
     position: sticky;
     top: 0;
 
-    z-index: 9999999999999;
+    /* z-index: 9999999999999; */
     padding-top: 15px;
     padding-inline: 15px;
     background: #ffffff;
